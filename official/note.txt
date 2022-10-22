@@ -21,3 +21,6 @@ if __name__ == "__main__":
 
 //đổi file ảnh
 pyside2-rcc images.qrc -o rc_images.py
+
+//Đây là pip cài pyside2
+pip install PySide2

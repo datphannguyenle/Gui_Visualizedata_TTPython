@@ -32,30 +32,19 @@
    <widget class="QWidget" name="verticalLayoutWidget">
     <property name="geometry">
      <rect>
-      <x>20</x>
-      <y>110</y>
+      <x>30</x>
+      <y>120</y>
       <width>451</width>
       <height>291</height>
      </rect>
     </property>
     <layout class="QVBoxLayout" name="dothi_1"/>
    </widget>
-   <widget class="QWidget" name="verticalLayoutWidget_2">
-    <property name="geometry">
-     <rect>
-      <x>530</x>
-      <y>110</y>
-      <width>451</width>
-      <height>291</height>
-     </rect>
-    </property>
-    <layout class="QVBoxLayout" name="dothi_2"/>
-   </widget>
    <widget class="QWidget" name="verticalLayoutWidget_3">
     <property name="geometry">
      <rect>
-      <x>20</x>
-      <y>460</y>
+      <x>30</x>
+      <y>450</y>
       <width>451</width>
       <height>291</height>
      </rect>
@@ -65,8 +54,8 @@
    <widget class="QWidget" name="verticalLayoutWidget_4">
     <property name="geometry">
      <rect>
-      <x>530</x>
-      <y>460</y>
+      <x>520</x>
+      <y>450</y>
       <width>451</width>
       <height>291</height>
      </rect>
@@ -76,14 +65,26 @@
    <widget class="QWidget" name="tieude" native="true">
     <property name="geometry">
      <rect>
-      <x>-1</x>
-      <y>-10</y>
-      <width>1001</width>
+      <x>0</x>
+      <y>0</y>
+      <width>1000</width>
       <height>101</height>
      </rect>
     </property>
+    <property name="minimumSize">
+     <size>
+      <width>1000</width>
+      <height>0</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>1000</width>
+      <height>16777215</height>
+     </size>
+    </property>
     <property name="styleSheet">
-     <string notr="true">border-radius: 50px;
+     <string notr="true">border-radius: 30px;
 background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(42, 44, 111, 255), stop:0.521368 rgba(28, 29, 73, 255));</string>
     </property>
     <widget class="QLabel" name="tendetai">
@@ -108,7 +109,7 @@ background-color: none;
 </string>
      </property>
      <property name="text">
-      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:26pt; font-style:normal;&quot;&gt;Visualize Data&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:26pt; font-style:normal;&quot;&gt;Visualize Data Software&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
      </property>
     </widget>
     <widget class="QLabel" name="tacgia">
@@ -149,11 +150,14 @@ image: url(:/images/images/logos/ute_logo.png);</string>
    <widget class="QPushButton" name="load_button">
     <property name="geometry">
      <rect>
-      <x>20</x>
+      <x>30</x>
       <y>780</y>
       <width>89</width>
       <height>31</height>
      </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
     </property>
     <property name="styleSheet">
      <string notr="true">background-color: rgb(255, 255, 255);</string>
@@ -165,11 +169,14 @@ image: url(:/images/images/logos/ute_logo.png);</string>
    <widget class="QPushButton" name="start_button">
     <property name="geometry">
      <rect>
-      <x>380</x>
+      <x>390</x>
       <y>780</y>
       <width>91</width>
       <height>31</height>
      </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
     </property>
     <property name="styleSheet">
      <string notr="true">background-color: rgb(255, 255, 255);</string>
@@ -187,6 +194,9 @@ image: url(:/images/images/logos/ute_logo.png);</string>
       <height>31</height>
      </rect>
     </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
     <property name="styleSheet">
      <string notr="true">background-color: rgb(255, 255, 255);
 </string>
@@ -198,7 +208,7 @@ image: url(:/images/images/logos/ute_logo.png);</string>
    <widget class="QTextEdit" name="url_load">
     <property name="geometry">
      <rect>
-      <x>120</x>
+      <x>130</x>
       <y>780</y>
       <width>251</width>
       <height>31</height>
@@ -208,14 +218,27 @@ image: url(:/images/images/logos/ute_logo.png);</string>
    <widget class="QFrame" name="frame">
     <property name="geometry">
      <rect>
-      <x>-20</x>
-      <y>-10</y>
-      <width>1051</width>
-      <height>891</height>
+      <x>0</x>
+      <y>0</y>
+      <width>1000</width>
+      <height>858</height>
      </rect>
     </property>
+    <property name="minimumSize">
+     <size>
+      <width>1000</width>
+      <height>800</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>1000</width>
+      <height>858</height>
+     </size>
+    </property>
     <property name="styleSheet">
-     <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(42, 44, 111, 255), stop:0.521368 rgba(28, 29, 73, 255));</string>
+     <string notr="true">border-radius:30px;
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(42, 44, 111, 255), stop:0.521368 rgba(28, 29, 73, 255));</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::StyledPanel</enum>
@@ -224,9 +247,32 @@ image: url(:/images/images/logos/ute_logo.png);</string>
      <enum>QFrame::Raised</enum>
     </property>
    </widget>
+   <widget class="QWidget" name="verticalLayoutWidget_2">
+    <property name="geometry">
+     <rect>
+      <x>520</x>
+      <y>120</y>
+      <width>451</width>
+      <height>291</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="dothi_2"/>
+   </widget>
+   <widget class="QLabel" name="mota">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>820</y>
+      <width>501</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-style:italic; color:#c2c2c2;&quot;&gt;Nhấn &lt;/span&gt;&lt;span style=&quot; font-weight:600; font-style:italic; color:#ffffff;&quot;&gt;Load&lt;/span&gt;&lt;span style=&quot; font-style:italic; color:#c2c2c2;&quot;&gt; để tải dữ liệu lên phần mềm và &lt;/span&gt;&lt;span style=&quot; font-weight:600; font-style:italic; color:#ffffff;&quot;&gt;Start&lt;/span&gt;&lt;span style=&quot; font-style:italic; color:#c2c2c2;&quot;&gt; để bắt đầu tạo biểu đồ !&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
    <zorder>frame</zorder>
    <zorder>verticalLayoutWidget</zorder>
-   <zorder>verticalLayoutWidget_2</zorder>
    <zorder>verticalLayoutWidget_3</zorder>
    <zorder>verticalLayoutWidget_4</zorder>
    <zorder>tieude</zorder>
@@ -234,6 +280,8 @@ image: url(:/images/images/logos/ute_logo.png);</string>
    <zorder>start_button</zorder>
    <zorder>exit_button</zorder>
    <zorder>url_load</zorder>
+   <zorder>verticalLayoutWidget_2</zorder>
+   <zorder>mota</zorder>
   </widget>
  </widget>
  <resources>
