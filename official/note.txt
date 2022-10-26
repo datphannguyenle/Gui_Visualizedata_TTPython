@@ -24,3 +24,14 @@ pyside2-rcc images.qrc -o rc_images.py
 
 //Đây là pip cài pyside2
 pip install PySide2
+
+//
+#Thiết lập chức năng cho nút exit
+        self.exit_button.clicked.connect(QApplication.instance().quit)
+//cách lấy đường dẫn
+        diachi = QFileDialog.getOpenFileNames()
+        chuanhoa = str(diachi)[:-20]
+        chuanhoa = chuanhoa[3:] 
+
+//
+http://laptrinhtanbinh.com/course/1/Lap-trinh-voi-ngon-ngu-C/45/3.8.-Diem-danh-nhung-widget-thong-dung

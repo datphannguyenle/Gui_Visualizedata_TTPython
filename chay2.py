@@ -10,21 +10,10 @@ class gui(Ui_MainWindow):
         self.pushButton.clicked.connect(self.chaycode)
     def chaycode(self):
         diachi = QFileDialog.getOpenFileNames()
-        print(type(diachi))
-        dc2=list(diachi)
-        print(type(dc2))
-        print(dc2)
-        dc3=str(dc2)
-        print(type(dc3))
-        print(dc3)
-        return dc3
-    def doc(self):
-        docdc= gui.chaycode()
-        print(docdc)
-    
-    
-        
-
+        chuanhoa = str(diachi)[:-20]
+        chuanhoa = chuanhoa[3:] 
+        print(chuanhoa)
+        return chuanhoa
 
 if __name__ == "__main__":
     import sys

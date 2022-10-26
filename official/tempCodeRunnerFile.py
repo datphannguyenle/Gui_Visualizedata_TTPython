@@ -1,0 +1,1 @@
+nd('span#wob_tm', first=True).text)
