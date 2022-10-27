@@ -1,9 +1,33 @@
-from requests_html import HTMLSession
-s = HTMLSession()
-query = 'Hồ Chí Minh'
-url = f'https://www.google.com/search?q=weather+{query}'
-r = s.get(url, headers={'User-Agent':'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:106.0) Gecko/20100101 Firefox/106.0'})
-#print(r.html.find('span#wob_tm', first=True).text)
-#print(r.html.find('div.wNE31c', first=True).find('div.gNCp2e span.wob_t', first=True).text)
-#print(r.html.find('div.wob_df.wob_ds', first=True).find('div.wNE31c', first=True).find('div.gNCp2e span.wob_t', first=True).text)
-print(r.html.find('div.R3Y3ec.rr3bxd', first=True).find('div.wob_df.wob_ds'))
+import requests
+
+base_url = 'http://api.openweathermap.org/data/2.5/forecast?'
+api_key = 'ba6a67a16c5be47d1383d19b93965582'
+city = 'ho cHi Minh'
+url = 'http://api.openweathermap.org/data/2.5/forecast?q=' + city + '&appid=' + api_key
+time_to_get = 0
+
+def kelvin_to_celius(kelvin):
+    celcius = kelvin - 273.15
+    return celcius
+
+response = requests.get(url).json()
+#Ngay lay thong so
+str(response['list'][time_to_get]['dt_txt'])
+
+#Nhiet do theo ngay (*c)
+round(kelvin_to_celius(float(response['list'][time_to_get]['main']['temp'])))
+
+#Do am theo ngay (%)
+float(response['list'][time_to_get]['main']['humidity'])
+
+#Ap suat khi quyen tren mat dat (hPa))
+float(response['list'][time_to_get]['main']['grnd_level'])
+
+#Toc do gio (m/s))
+float(response['list'][time_to_get]['wind']['speed'])
+
+#Lay luong mua : Moi ngay lay du lieu 8 lan (cach 3 tieng) + api cho lay 5 ngay -> gioi han la counter = 40
+try:
+    response['list'][time_to_get]['rain']
+except:
+    pass
